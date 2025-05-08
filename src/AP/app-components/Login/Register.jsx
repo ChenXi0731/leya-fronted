@@ -9,7 +9,7 @@ function RegisterPage({activePage, setActivePage}) {
 
     return (
         <div className="login-container">
-            <img src="application-src/assets/images/LeyaLogo.png" alt="" className="login-logo" />
+            <img src="/leya-fronted/src/AP/app-components/assets/images/LeyaLogo.png" alt="" className="login-logo" />
             <h2 className="login-title">樂壓Talks</h2>
             <div className="input-group">
                 <input className="login-input" type="email" placeholder="Email" />

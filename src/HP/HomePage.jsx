@@ -1,5 +1,5 @@
 import { faCircleRight } from '@fortawesome/free-solid-svg-icons';
-import './index.css'
+import './hp.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function HomePage({ handleNavigation }) {
@@ -7,7 +7,7 @@ function HomePage({ handleNavigation }) {
         <div className='hp-global'>
             <FakeNavbar />
             <div className='hp-navbar'>
-                <img src="/leyalogo.png" alt="LeyaTalks" className='hp-navbar_logo' />
+                <img src="/leya-fronted/public/leyalogo.png" alt="LeyaTalks" className='hp-navbar_logo' />
                 <div className='hp-navbar-links'>
                     <a href="#">主頁</a>
                     <a href="#">專題理念</a>
@@ -28,22 +28,7 @@ function FakeNavbar() {
     )
 }
 
-// Navbar導覽列
-function Navbar({ handleNavigation }) {
-    return (
-        <div className='hp-navbar'>
-            <img src="/leyalogo.png" alt="LeyaTalks" className='hp-navbar_logo' />
-            <div className='hp-navbar_links'>
-                <a href="#">主頁</a>
-                <a href="#">專題理念</a>
-                <a href="#">專題企劃</a>
-                <a onClick={() => handleNavigation("/LeyaTalks")} className='hp-arrow-link'>
-                    <img id="hp-arrow-to-application" src="/arrow-narrow-circle-broken-down-svgrepo-com.svg" alt="Trun to Application" />
-                </a>
-            </div>
-        </div>
-    );
-}
+
 // 內容容器
 function Container() {
     return (
@@ -55,15 +40,6 @@ function Container() {
         </div>
     )
 }
-// 主區塊
-// function Main() {
-//     return (
-//         <div class='hp-main-content'>
-//             <h1>世新大學<br />資訊傳播學系<br />111級畢業專題</h1>
-//             <h1>LeyaTalks</h1>
-//         </div>
-//     )
-// }
 
 function Slogan() {
     return (
@@ -78,7 +54,7 @@ function Content() {
         <div className='hp-content-container'>
             <div className="hp-half-container">
                 <div className="hp-content-top">
-                    <img src="/tempcontent.png" alt="" />
+                    <img src="/leya-fronted/public/tempcontent.png" alt="" />
                 </div>
                 <div className="hp-content-bottom"></div>
             </div>
@@ -97,7 +73,7 @@ function Content_Reverse() {
             </div>
             <div className="hp-half-container">
                 <div className="hp-content-top">
-                    <img src="/tempcontent.png" alt="" />
+                    <img src="/leya-fronted/public/tempcontent.png" alt="" />
                 </div>
                 <div className="hp-content-bottom"></div>
             </div>
@@ -110,11 +86,11 @@ function Footer() {
         <div className='hp-footer'>
             <div className='hp-footer-logo'>
                 <div className='hp-logo-container'>
-                    <img src="/shu.png" alt="" className='shu' />
+                    <img src="/leya-fronted/public/shu.png" alt="" className='shu' />
                     <span style={{display: 'flex', flexDirection: 'column'}}><p style={{fontSize: '1.6rem'}}>世新大學</p><p style={{fontSize: '1rem'}}>Shih Hsin University</p></span>
                 </div>
                 <div className='hp-logo-container'>
-                    <img src="/ics.png" alt="" className='ics' />
+                    <img src="/leya-fronted/public/ics.png" alt="" className='ics' />
                     <span style={{display: 'flex', flexDirection: 'column'}}><p style={{fontSize: '1.6rem'}}>資訊傳播學系</p><p style={{fontSize: '1rem'}}>Department of<br/>Information and Communications</p></span>
                 </div>
             </div>
