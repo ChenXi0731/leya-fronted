@@ -7,7 +7,7 @@ function HomePage({ handleNavigation }) {
         <div className='hp-global'>
             <FakeNavbar />
             <div className='hp-navbar'>
-                <img src="/public/leyalogo.png" alt="LeyaTalks" className='hp-navbar_logo' />
+                <img src="/refs/heads/main/public/leyalogo.png" alt="LeyaTalks" className='hp-navbar_logo' />
                 <div className='hp-navbar-links'>
                     <a href="#">主頁</a>
                     <a href="#">專題理念</a>
