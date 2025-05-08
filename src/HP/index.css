@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Serif+TC:wght@200..900&display=swap');
+
+.hp-global {
+    fake {}
+
+    html,
+    body {
+        font-family: 'Noto Sans TC', sans-serif;
+        /* width: 100%; */
+        margin: 0;
+        padding: 0;
+        background-color: #FAEAD3;
+
+    }
+}
+
+.hp-fake-navbar {
+    width: 100%;
+    height: 4em;
+}
+
+.hp-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: 5em;
+    background-color: #FAEAD3;
+    z-index: 2;
+}
+
+.hp-navbar_logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 6em;
+    /* height: 4em; */
+    padding-left: 1em;
+}
+
+.hp-navbar-links {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 3em;
+    margin-right: 2em;
+    font-size: 1.2em;
+}
+
+.hp-navbar-links a {
+    font-family: 'Noto Sans TC', serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+.hp-arrow-link {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.hp-navbar-links a:hover{
+    color: #c49349;
+    transition: 0.3s;
+}
+
+#hp-arrow-to-application {
+    max-width: 2em;
+    max-height: 2em;
+}
+
+.hp-container {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F8EBD8;
+    margin: 0;
+}
+
+.hp-slogan {
+    padding: 2rem;
+    text-align: center;
+    font-size: 5rem;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hp-content-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30rem;
+}
+
+.hp-half-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.hp-content-top {
+    display: flex;
+    flex: 4;
+
+    ::before {}
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.hp-content-bottom {
+    display: flex;
+    flex: 1;
+}
+
+.hp-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 2rem;
+    padding-right: 40%;
+}
+
+.hp-content-reverse {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-right: 2rem;
+    padding-left: 40%;
+    text-align: right;
+}
+
+.hp-footer {
+    padding: 1rem;
+    background-color: #C5B8A5;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.hp-footer-logo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    flex: 1;
+
+}
+
+.hp-logo-container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+
+    fake {}
+
+    p {
+        font-family: "Noto Serif TC", serif;
+        font-weight: 700;
+    }
+}
+
+.shu,
+.ics {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.hp-copyright {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-direction: column;
+    padding-top: 2rem;
+
+    fake {}
+
+    p {
+        font-family: "Noto Serif TC", serif;
+        font-weight: 700;
+    }
+}
+
+.hp-footer-contact {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: right;
+    text-align: right;
+    font-size: 1.1rem;
+
+    html {}
+
+    p {
+        margin: 1rem;
+        font-family: "Noto Serif TC", serif;
+        font-weight: 700;
+
+        fake {}
+
+        a {
+            font-family: "Noto Serif TC", serif;
+        }
+
+    }
+}
+
+/* 
+.hp-main-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 11em;
+    padding-bottom: 10.5em;
+    font-size: 1.5em;
+    background-image: url(../public/tempbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.hp-main-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+
+#main h1 {
+    z-index: 1;
+    color: #fff;
+} */
