@@ -7,7 +7,7 @@ function HomePage({ handleNavigation }) {
         <div className='hp-global'>
             <FakeNavbar />
             <div className='hp-navbar'>
-                <img src="/refs/heads/main/public/leyalogo.png" alt="LeyaTalks" className='hp-navbar_logo' />
+                <img src="https://raw.githubusercontent.com/ChenXi0731/leya-fronted/refs/heads/main/public/leyalogo.png" alt="LeyaTalks" className='hp-navbar_logo' />
                 <div className='hp-navbar-links'>
                     <a href="#">主頁</a>
                     <a href="#">專題理念</a>
@@ -54,7 +54,7 @@ function Content() {
         <div className='hp-content-container'>
             <div className="hp-half-container">
                 <div className="hp-content-top">
-                    <img src="/public/tempcontent.png" alt="" />
+                    <img src="https://raw.githubusercontent.com/ChenXi0731/leya-fronted/refs/heads/main/public/tempcontent.png" alt="" />
                 </div>
                 <div className="hp-content-bottom"></div>
             </div>
@@ -73,7 +73,7 @@ function Content_Reverse() {
             </div>
             <div className="hp-half-container">
                 <div className="hp-content-top">
-                    <img src="/public/tempcontent.png" alt="" />
+                    <img src="https://raw.githubusercontent.com/ChenXi0731/leya-fronted/refs/heads/main/public/tempcontent.png" alt="" />
                 </div>
                 <div className="hp-content-bottom"></div>
             </div>
@@ -86,11 +86,11 @@ function Footer() {
         <div className='hp-footer'>
             <div className='hp-footer-logo'>
                 <div className='hp-logo-container'>
-                    <img src="/public/shu.png" alt="" className='shu' />
+                    <img src="https://raw.githubusercontent.com/ChenXi0731/leya-fronted/refs/heads/main/public/shu.png" alt="" className='shu' />
                     <span style={{display: 'flex', flexDirection: 'column'}}><p style={{fontSize: '1.6rem'}}>世新大學</p><p style={{fontSize: '1rem'}}>Shih Hsin University</p></span>
                 </div>
                 <div className='hp-logo-container'>
-                    <img src="/public/ics.png" alt="" className='ics' />
+                    <img src="https://raw.githubusercontent.com/ChenXi0731/leya-fronted/refs/heads/main/public/ics.png" alt="" className='ics' />
                     <span style={{display: 'flex', flexDirection: 'column'}}><p style={{fontSize: '1.6rem'}}>資訊傳播學系</p><p style={{fontSize: '1rem'}}>Department of<br/>Information and Communications</p></span>
                 </div>
             </div>
