@@ -13,7 +13,7 @@ function UserPage({ activePage, setActivePage, userInfo }) {
         <>
             <div className="user-page">
                 <div className="user-header">
-                    <img src="./src/AP/app-components/assets/images/pIcon192.png" alt="" className='user-avatar' />
+                    <img src="https://raw.githubusercontent.com/ChenXi0731/leya-fronted/refs/heads/main/public/leyalogo.png" alt="" className='user-avatar' />
                     <div className="user-info">
                         <h2 className="user-name">{userInfo.nickname}</h2>
                         <p className="user-id">@{userInfo.id}</p>
