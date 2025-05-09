@@ -33,38 +33,42 @@ body {
 #app {
     width: 100%;
     height: 100vh;
-    /* max-width: 480px; */
+    max-width: 480px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
 }
 
-.page-container {
+.ap-page-container {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
+    justify-content: center;
     position: relative;
 }
 
 /* 头部样式 */
-.header {
+.ap-header {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     padding: 15px;
     background-color: var(--primary-color);
     border-bottom: 1px solid var(--border-color);
     position: relative;
-    z-index: 10;
-    justify-content: space-between;
+    z-index: 10;   
+    max-width: 480px;
 
-    .header-title {
-        text-align: center;
-        flex: 1;
-        font-family: "LXGW WenKai TC", cursive;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 2em;
-    }
+}
+
+.ap-header-title {
+    text-align: center;
+    flex: 1;
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
 }
 
 .logo {
@@ -177,7 +181,8 @@ body {
     margin-bottom: 1em;
     display: flex;
     width: 100%;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 /* 帖子列表样式 */
@@ -318,7 +323,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    width: 40%;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .category-icon {

@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function CategoryPage() {
     return (
         <>
-            <div className="content-area" id="category-page">
+            <div id="category-page">
                 <div className="category-list">
                     <div className="category-row">
                         <div className="category-item">

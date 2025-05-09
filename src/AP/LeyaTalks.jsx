@@ -37,7 +37,7 @@ function Application() {
 
     return (
             <div id='app'>
-                <div className='page-container'>
+                <div className='ap-page-container'>
                     { !whiteList.includes(activePage) && <Header setActivePage={setActivePage} /> }
                     <div className="content-area">
                         {renderPage()}

@@ -14,7 +14,7 @@ function LoginPage({ activePage, setActivePage, setUserInfo }) {
         e.preventDefault();
         setError(''); // 清空之前的錯誤訊息
         try {
-            const response = await fetch('http://localhost:3000/api/login', {
+            const response = await fetch('https://leya-backend-vercel.vercel.app/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

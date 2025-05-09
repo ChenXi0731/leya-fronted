@@ -1,11 +1,14 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserTie } from "@fortawesome/free-solid-svg-icons";
 
 function DonatePost() {
     return (
         <>
             <div class="post-item">
                 <div class="post-avatar">
-                    <img src="./src/AP/app-components/assets/images/pIcon192.png" alt="微熊版" />
+                    {/* <img src="./src/AP/app-components/assets/images/pIcon192.png" alt="微熊版" /> */}
+                    <FontAwesomeIcon icon={faUserTie} style={{fontSize: "2.5rem", color: "red"}}/>
                 </div>
                 <div class="post-content">
                     <div class="post-header">
