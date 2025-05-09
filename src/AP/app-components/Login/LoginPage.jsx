@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./login.css";
+import "/leya-fronted/src/AP/app-components/Login/login.css";
 
 function LoginPage({ activePage, setActivePage, setUserInfo }) {
     const [username, setUsername] = useState('');

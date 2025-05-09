@@ -33,7 +33,7 @@ body {
 #app {
     width: 100%;
     height: 100vh;
-    max-width: 480px;
+    /* max-width: 480px; */
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -175,6 +175,9 @@ body {
     padding: 10px 0;
     background-color: var(--primary-color);
     margin-bottom: 1em;
+    display: flex;
+    width: 100%;
+    align-items: center;
 }
 
 /* 帖子列表样式 */

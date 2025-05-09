@@ -36,7 +36,6 @@ function Application() {
     }
 
     return (
-        <>
             <div id='app'>
                 <div className='page-container'>
                     { !whiteList.includes(activePage) && <Header setActivePage={setActivePage} /> }
@@ -46,7 +45,6 @@ function Application() {
                     { !whiteList.includes(activePage) && <Footer activePage={activePage} setActivePage={setActivePage} /> }
                 </div>
             </div>
-        </>
     )
 }
 
