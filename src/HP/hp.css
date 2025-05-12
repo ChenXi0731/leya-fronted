@@ -1,17 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Serif+TC:wght@200..900&display=swap');
 
 .hp-global {
-    fake {}
-
-    html,
-    body {
-        font-family: 'Noto Sans TC', sans-serif;
-        /* width: 100%; */
-        margin: 0;
-        padding: 0;
-        background-color: #FAEAD3;
-
-    }
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAEAD3;
+    overflow-x: hidden;
 }
 
 .hp-fake-navbar {
@@ -29,32 +23,26 @@
     width: 100%;
     max-height: 5em;
     background-color: #FAEAD3;
-    z-index: 2;
+    z-index: 999;
+    padding: 1em;
+    box-sizing: border-box;
 }
 
 .hp-navbar_logo {
-    display: flex;
-    justify-content: left;
-    align-items: center;
     width: 6em;
-    /* height: 4em; */
-    padding-left: 1em;
 }
 
 .hp-navbar-links {
     display: flex;
     justify-content: right;
     align-items: center;
-    width: 100%;
-    height: 100%;
     gap: 3em;
     margin-right: 2em;
     font-size: 1.2em;
+    transition: all 0.3s ease;
 }
 
 .hp-navbar-links a {
-    font-family: 'Noto Sans TC', serif;
-    font-weight: 500;
     text-decoration: none;
     color: #000;
 }
@@ -64,7 +52,7 @@
     font-size: 1.5rem;
 }
 
-.hp-navbar-links a:hover{
+.hp-navbar-links a:hover {
     color: #c49349;
     transition: 0.3s;
 }
@@ -95,7 +83,8 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 30rem;
+    height: auto;
+    min-height: 30rem;
 }
 
 .hp-half-container {
@@ -107,12 +96,15 @@
 .hp-content-top {
     display: flex;
     flex: 4;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
-    ::before {}
-
-    img {
-        max-width: 100%;
-    }
+.hp-content-top img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .hp-content-bottom {
@@ -126,6 +118,9 @@
     height: 100%;
     padding-left: 2rem;
     padding-right: 40%;
+    padding-bottom: 7rem;
+    text-align: justify;
+    line-height: 1.6;
 }
 
 .hp-content-reverse {
@@ -134,7 +129,9 @@
     height: 100%;
     padding-right: 2rem;
     padding-left: 40%;
+    padding-bottom: 7rem;
     text-align: right;
+    line-height: 1.6;
 }
 
 .hp-footer {
@@ -142,8 +139,7 @@
     background-color: #C5B8A5;
     display: flex;
     flex-direction: row;
-
-
+    flex-wrap: wrap;
 }
 
 .hp-footer-logo {
@@ -151,23 +147,21 @@
     flex-direction: column;
     padding-left: 2rem;
     flex: 1;
-
+    min-width: 300px;
 }
 
 .hp-logo-container {
-
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 1.2rem;
     padding-top: 1rem;
+}
 
-    fake {}
-
-    p {
-        font-family: "Noto Serif TC", serif;
-        font-weight: 700;
-    }
+.hp-logo-container p {
+    font-family: "Noto Serif TC", serif;
+    font-weight: 700;
+    margin: 0.2rem 0;
 }
 
 .shu,
@@ -184,13 +178,14 @@
     font-size: 1.4rem;
     flex-direction: column;
     padding-top: 2rem;
+    min-width: 300px;
+}
 
-    fake {}
-
-    p {
-        font-family: "Noto Serif TC", serif;
-        font-weight: 700;
-    }
+.hp-copyright p {
+    font-family: "Noto Serif TC", serif;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    text-align: center;
 }
 
 .hp-footer-contact {
@@ -200,52 +195,272 @@
     justify-content: right;
     text-align: right;
     font-size: 1.1rem;
+    min-width: 300px;
+}
 
-    html {}
+.hp-footer-contact p {
+    margin: 1rem;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 700;
+}
 
-    p {
-        margin: 1rem;
-        font-family: "Noto Serif TC", serif;
-        font-weight: 700;
+.hp-footer-contact p a {
+    font-family: "Noto Serif TC", serif;
+    color: #000;
+    text-decoration: none;
+}
 
-        fake {}
+.hp-footer-contact p a:hover {
+    text-decoration: underline;
+    color: #c49349;
+}
 
-        a {
-            font-family: "Noto Serif TC", serif;
-        }
+.hp-hamburger {
+    display: none; /* 預設隱藏漢堡菜單 */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
+/* 大螢幕設備樣式 */
+@media (min-width: 1441px) {
+    .hp-slogan {
+        font-size: 6rem;
+        padding: 3rem;
+    }
+    
+    .hp-content-container {
+        min-height: 35rem;
+    }
+    
+    .hp-content, .hp-content-reverse {
+        font-size: 1.2rem;
+    }
+    
+    .hp-footer {
+        padding: 2rem;
     }
 }
 
-/* 
-.hp-main-content {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    align-items: center;
-    padding-top: 11em;
-    padding-bottom: 10.5em;
-    font-size: 1.5em;
-    background-image: url(../public/tempbg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
+/* 筆記本電腦樣式 */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .hp-slogan {
+        font-size: 4.5rem;
+    }
+    
+    .hp-content-container {
+        min-height: 30rem;
+    }
 }
 
-.hp-main-content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    z-index: -1;
+/* 平板樣式 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hp-navbar {
+        flex-direction: row;
+        padding: 0.8em;
+    }
+    
+    .hp-navbar-links {
+        gap: 2em;
+        margin-right: 1em;
+        font-size: 1.1em;
+    }
+    
+    .hp-navbar_logo {
+        width: 5em;
+    }
+
+    .hp-slogan {
+        font-size: 4rem;
+        padding: 1.5rem;
+    }
+
+    .hp-content-container {
+        flex-direction: row;
+        min-height: 25rem;
+    }
+
+    .hp-half-container {
+        width: 50%;
+    }
+    
+    .hp-content {
+        padding-left: 1.5rem;
+        padding-right: 20%;
+        font-size: 0.95rem;
+    }
+    
+    .hp-content-reverse {
+        padding-right: 1.5rem;
+        padding-left: 20%;
+        font-size: 0.95rem;
+    }
+    
+    .hp-footer {
+        padding: 1rem 0.5rem;
+    }
+    
+    .hp-footer-logo {
+        padding-left: 1rem;
+    }
+    
+    .hp-logo-container p[style*="font-size: '1.6rem'"] {
+        font-size: 1.4rem !important;
+    }
 }
 
-#main h1 {
-    z-index: 1;
-    color: #fff;
-} */
+/* 手機樣式 */
+@media (max-width: 768px) {
+    .hp-navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.8em;
+    }
+    
+    .hp-navbar_logo {
+        width: 4.5em;
+    }
+
+    .hp-navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(250, 234, 211, 0.95);
+        position: absolute;
+        top: 4em;
+        left: 0;
+        padding: 1em 0;
+        margin: 0;
+        gap: 1.5em;
+        transform: translateY(-20px);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .hp-navbar-links.open {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        z-index: 1000;
+    }
+
+    .hp-hamburger {
+        display: block;
+    }
+
+    .hp-slogan {
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+
+    .hp-content-container {
+        flex-direction: column;
+        height: auto;
+        min-height: auto;
+    }
+
+    .hp-half-container {
+        width: 100%;
+    }
+    
+    .hp-content-top {
+        padding: 1rem;
+    }
+    
+    .hp-content-bottom {
+        display: none;
+    }
+
+    .hp-content {
+        padding: 1.5rem;
+        text-align: left;
+        font-size: 0.9rem;
+    }
+    
+    .hp-content-reverse {
+        padding: 1.5rem;
+        text-align: left;
+        font-size: 0.9rem;
+        order: 2;
+    }
+    
+    .hp-footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0.5rem;
+    }
+    
+    .hp-footer-logo {
+        padding-left: 0;
+        align-items: center;
+    }
+    
+    .hp-logo-container {
+        justify-content: center;
+    }
+    
+    .hp-copyright {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    .hp-footer-contact {
+        text-align: center;
+        align-items: center;
+        padding: 1rem 0;
+    }
+    
+    .hp-footer-contact p {
+        margin: 0.5rem;
+    }
+}
+
+/* 小手機樣式 */
+@media (max-width: 480px) {
+    .hp-navbar {
+        padding: 0.6em;
+    }
+    
+    .hp-navbar_logo {
+        width: 4em;
+    }
+    
+    .hp-slogan {
+        font-size: 2rem;
+        padding: 0.8rem;
+    }
+    
+    .hp-content {
+        padding: 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .hp-content-reverse {
+        padding: 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .hp-logo-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hp-logo-container span {
+        align-items: center;
+    }
+    
+    .shu, .ics {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hp-copyright {
+        font-size: 1rem;
+    }
+    
+    .hp-footer-contact {
+        font-size: 0.9rem;
+    }
+}

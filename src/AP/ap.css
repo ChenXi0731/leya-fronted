@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap');
 
+
 /* 全局样式 */
 :root {
     --primary-color: #FFF4EB;
@@ -90,6 +91,8 @@ body {
     font-weight: bold;
     overflow: hidden;
     border-bottom: 1px solid var(--border-color);
+    
+    .fake{}
 
     .golden-sentence-icon {
         font-size: 2em;
@@ -119,6 +122,7 @@ body {
         padding-top: 1.6em;
         color: #AAB8AB;
 
+        .fake{}
         :hover {
             color: #53565C;
             transition: 0.5s;
