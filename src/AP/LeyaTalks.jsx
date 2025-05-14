@@ -8,6 +8,7 @@ import ChatPage from './app-components/ChatPage'
 import UserPage from './app-components/UserPage'
 import LoginPage from './app-components/Login/LoginPage'
 import RegisterPage from './app-components/Login/Register'
+import Sercet from './app-components/Sand'
 
 
 function Application() {
@@ -21,7 +22,7 @@ function Application() {
             case 'home-page':
                 return <Post />
             case 'category-page':
-                return <CategoryPage />
+                return <CategoryPage  activePage={activePage} setActivePage={setActivePage} />
             case 'chat-page':
                 return <ChatPage />
             case 'user-page':
@@ -30,6 +31,8 @@ function Application() {
                 return <LoginPage activePage={activePage} setActivePage={setActivePage} setUserInfo={setUserInfo} />
             case 'register':
                 return <RegisterPage activePage={activePage} setActivePage={setActivePage}/>
+            case 'secret':
+                return <Sercet activePage={activePage} setActivePage={setActivePage}/>
             default:
                 return <Post />
         }

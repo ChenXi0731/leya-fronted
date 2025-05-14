@@ -3,7 +3,7 @@ import { faBrain, faCloudMoon, faClipboardCheck, faClock, faEarthAmericas } from
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-function CategoryPage() {
+function CategoryPage({ activePage, setActivePage }) {
     return (
         <>
             <div id="category-page">
@@ -58,8 +58,10 @@ function CategoryPage() {
                             <div className="category-name">即將新增</div>
                         </div>
                         <div className="category-item coming-soon">
-                            <div className="category-icon">
-                                <FontAwesomeIcon icon={faClock} />
+                            <div className="category-icon"
+                                onClick={() => setActivePage('secret')}
+                                style={{cursor: "pointer"}}>
+                                <FontAwesomeIcon icon={faEarthAmericas} />
                             </div>
                             <div className="category-name">即將新增</div>
                         </div>
