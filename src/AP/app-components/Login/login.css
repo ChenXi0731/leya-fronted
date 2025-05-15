@@ -26,6 +26,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding: 0 15px;
 }
 
 .login-input {
@@ -87,7 +88,8 @@ button.login:hover {
     height: 25rem;
     background-color: #ffbac7;
     border-radius: 24px 24px 0 0;
-    width: 480px;
+    width: 100%;
+    max-width: 480px;
 
     .fake{}
     h1{
@@ -129,10 +131,6 @@ button.login:hover {
 }
 
 .login-donate {
-    /* position: fixed; */
-    /* bottom: 0; */
-    /* left: 0; */
-    /* right: 0; */
     height: 120px;
     width: 100%;
     max-width: 480px;
@@ -146,5 +144,110 @@ button.login:hover {
         height: 64px;
         max-width: 96px;
         max-height: 96px;
+    }
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    .login-logo {
+        width: 100px;
+        margin-top: 6vh;
+        margin-bottom: 2vh;
+    }
+    
+    .login-title {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .input-group {
+        max-width: 90%;
+    }
+    
+    .login-reg-section {
+        height: 20rem;
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        a {
+            height: 60px;
+            width: 140px;
+            font-size: 1.8em;
+            margin-top: 3em;
+        }
+    }
+    
+    .login-donate {
+        height: 100px;
+        
+        img {
+            height: 54px;
+            max-width: 80px;
+            max-height: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login-logo {
+        width: 80px;
+        margin-top: 5vh;
+    }
+    
+    .login-title {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    
+    .input-group {
+        gap: 12px;
+    }
+    
+    .login-input {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    button.login {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .socials img {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .login-reg-section {
+        height: 18rem;
+        
+        h1 {
+            font-size: 2rem;
+        }
+        
+        a {
+            height: 50px;
+            width: 120px;
+            font-size: 1.5em;
+            margin-top: 2.5em;
+        }
+    }
+    
+    .login-donate {
+        height: 80px;
+        margin-top: 15px;
+        
+        img {
+            height: 40px;
+            max-width: 60px;
+            max-height: 60px;
+        }
+    }
+    
+    .signup {
+        margin-top: 24px;
+        font-size: 12px;
     }
 }
