@@ -97,7 +97,14 @@ function Content({ id, isMobile }) {
                         <div className="hp-content-bottom"></div>
                     </div>
                     <div className="hp-half-container">
-                        <div className="hp-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum necessitatibus quia dolore itaque adipisci corrupti, culpa dicta! Nesciunt provident nihil laudantium, dignissimos enim ex possimus fugiat impedit voluptatibus rem est nisi quidem at quaerat asperiores labore ea nostrum aliquam sit corrupti aut laborum, ducimus a! Delectus, enim temporibus labore aut doloribus sunt molestiae animi ullam autem. In accusantium vel nemo unde, quidem iure, tempora officiis labore error perferendis amet architecto quasi rem tempore. Officia perspiciatis nobis minima sequi libero! Debitis placeat mollitia doloribus nemo fuga sit possimus architecto praesentium consectetur. Aperiam, quod. Blanditiis, recusandae voluptatum ut modi corporis pariatur voluptatem.</div>
+                        <div className="hp-content">
+                            在快節奏的現代生活中，許多人外表看似正常，<br />
+                            內心卻早已身心俱疲，這正是韓國所稱的「Toast-out」狀態。<br />
+                            我們的專題網站樂壓Talk’s，便以此為靈感出發，<br />
+                            致力於打造一個能隨時隨地提供心理支持的網站，<br />
+                            協助使用者識別壓力來源、釋放情緒，<br />
+                            讓心理健康成為日常生活的一部分。
+                        </div>
                     </div>
                 </>
             ) : (
@@ -108,7 +115,16 @@ function Content({ id, isMobile }) {
                         </div>
                     </div>
                     <div className="hp-half-container">
-                        <div className="hp-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum necessitatibus quia dolore itaque adipisci corrupti, culpa dicta! Nesciunt provident nihil laudantium, dignissimos enim ex possimus fugiat impedit voluptatibus rem est nisi quidem at quaerat asperiores labore ea nostrum aliquam sit corrupti aut laborum, ducimus a!</div>
+                        <div className="hp-content">
+                            在快節奏的現代生活中<br />
+                            許多人外表看似正常<br />
+                            內心卻早已身心俱疲<br />
+                            這正是韓國所稱的「Toast-out」狀態<br />
+                            我們的專題網站樂壓Talk’s便以此為靈感出發<br />
+                            致力於打造一個能隨時隨地提供心理支持的網站<br />
+                            協助使用者識別壓力來源、釋放情緒<br />
+                            讓心理健康成為日常生活的一部分
+                        </div>
                     </div>
                 </>
             )}
@@ -122,7 +138,13 @@ function Content_Reverse({ id, isMobile }) {
             {!isMobile ? (
                 <>
                     <div className="hp-half-container">
-                        <div className="hp-content-reverse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dignissimos placeat enim, temporibus maxime nostrum recusandae ad alias rerum ipsum itaque quaerat culpa unde, velit animi reprehenderit dolorem nulla, assumenda esse eveniet magni dolore ab eius voluptas? Quam ut hic adipisci, numquam itaque quaerat officiis maiores sapiente corrupti cupiditate libero, minus magnam voluptatibus vel dolor sunt consequuntur quo odio totam. Commodi quia quas quisquam ut, sint quibusdam? Consectetur itaque quidem, adipisci, non ipsam aperiam nisi rem autem libero, at veniam. Minima incidunt et laudantium nemo possimus ducimus. Sed sit eius, laboriosam est accusantium quisquam ullam, qui eligendi nostrum eveniet aliquam.</div>
+                        <div className="hp-content-reverse">
+                            透過結合心理層面概念、數位科技與社群元素<br />
+                            讓社會更加重視隱性壓力<br />
+                            讓每一個人都能安心敞開心扉<br />
+                            並找到能被理解與支持的出口<br />
+                            進而建立一個有溫度的情緒抒發網站
+                        </div>
                     </div>
                     <div className="hp-half-container">
                         <div className="hp-content-top">
@@ -139,7 +161,13 @@ function Content_Reverse({ id, isMobile }) {
                         </div>
                     </div>
                     <div className="hp-half-container">
-                        <div className="hp-content-reverse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dignissimos placeat enim, temporibus maxime nostrum recusandae ad alias rerum ipsum itaque quaerat culpa unde, velit animi reprehenderit dolorem nulla, assumenda esse eveniet magni dolore ab eius voluptas?</div>
+                        <div className="hp-content-reverse">
+                            透過結合心理層面概念、數位科技與社群元素<br />
+                            讓社會更加重視隱性壓力<br />
+                            讓每一個人都能安心敞開心扉<br />
+                            並找到能被理解與支持的出口<br />
+                            進而建立一個有溫度的情緒抒發網站
+                        </div>
                     </div>
                 </>
             )}

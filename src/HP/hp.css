@@ -126,6 +126,7 @@
 .hp-content-reverse {
     display: flex;
     align-items: center;
+    justify-content: end;
     height: 100%;
     padding-right: 2rem;
     padding-left: 40%;
@@ -375,15 +376,17 @@
 
     .hp-content {
         padding: 1.5rem;
-        text-align: left;
+        text-align: center;
         font-size: 0.9rem;
+        margin: auto;
     }
     
     .hp-content-reverse {
         padding: 1.5rem;
-        text-align: left;
+        text-align: center;
         font-size: 0.9rem;
         order: 2;
+        margin: auto;
     }
     
     .hp-footer {
