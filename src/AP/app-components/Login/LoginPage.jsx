@@ -67,11 +67,11 @@ function LoginPage({ activePage, setActivePage, setUserInfo }) {
                 <button className={`login ${activePage === 'home-page' ? 'active' : 'login-page'}`} type="submit">登入</button>
             </form>
 
-            <div className="divider">── 或使用社群快速登入 ──</div>
+            {/* <div className="divider">── 或使用社群快速登入 ──</div>
             <div className="socials">
                 <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google" onClick={() => handle('home-page')} />
                 <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png" alt="Facebook" onClick={() => handle('home-page')} />
-            </div>
+            </div> */}
 
             <div className="signup">
                 還沒有帳號？<a href="#" className={`signup ${activePage === 'register' ? 'active' : ''}`} onClick={() => handle('register')}>註冊</a>
