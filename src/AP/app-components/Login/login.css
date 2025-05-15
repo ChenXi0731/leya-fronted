@@ -9,7 +9,7 @@
 }
 
 .login-logo {
-    width: 5em;
+    width: 128px;
     margin-top: 8vh;
     margin-bottom: 3vh;
 }
@@ -142,7 +142,9 @@ button.login:hover {
     
     .fake{}
     img{
-        max-width: 54px;
-        max-height: 54px;
+        width: 81px;
+        height: 81px;
+        max-width: 96px;
+        max-height: 96px;
     }
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import "./login.css";
 
-function RegisterPage({activePage, setActivePage}) {
-    
+function RegisterPage({ activePage, setActivePage }) {
+
     function handle(page) {
         setActivePage(page);
     }
@@ -29,9 +29,9 @@ function RegisterPage({activePage, setActivePage}) {
             </div>
 
             <div className="login-donate">
-            <img src="https://raw.githubusercontent.com/ChenXi0731/leya-fronted/refs/heads/main/public/shu.png" alt="世新大學校徽" className='shu' />
-            <img src="https://raw.githubusercontent.com/ChenXi0731/leya-fronted/refs/heads/main/public/ics.png" alt="資傳系徽" className='ics' />
-                
+                <img src="https://raw.githubusercontent.com/ChenXi0731/leya-fronted/refs/heads/main/public/shu.png" alt="世新大學校徽" className='shu' />
+                <img src="https://raw.githubusercontent.com/ChenXi0731/leya-fronted/refs/heads/main/public/ics.png" alt="資傳系徽" className='ics' />
+                <img src="https://raw.githubusercontent.com/ChenXi0731/leya-fronted/refs/heads/main/public/donate_example_logo.png" alt="donate"  className='login-donate-logo' />
             </div>
         </div>
     );
