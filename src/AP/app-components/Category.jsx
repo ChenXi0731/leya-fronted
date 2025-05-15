@@ -66,7 +66,7 @@ function CategoryPage({ activePage, setActivePage }) {
                             <div className="category-name">即將新增</div>
                         </div>
                         <div className="category-item">
-                            <a href="/">
+                            <a href="/leya-fronted">
                                 <div className="category-icon">
                                     <FontAwesomeIcon icon={faEarthAmericas} />
                                 </div>
